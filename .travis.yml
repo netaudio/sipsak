@@ -10,7 +10,8 @@ addons:
   apt:
     packages:
       - check
-      - libc-ares-dev
+      - libruli4-dev
+#      - libc-ares-dev
 before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install check c-ares gnutls ; fi
